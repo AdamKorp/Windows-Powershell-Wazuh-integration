@@ -2,11 +2,22 @@ Adding an agent to the Wazuh server is straightforward, and there's no better gu
 
 However, it's important to note that Windows PowerShell and Wazuh don’t get along 🤝❌. As a result, Wazuh may not notify us about suspicious PowerShell processes, which is a critical aspect of endpoint monitoring 🔍💻. Fortunately, with a few tweaks, we can help them find common ground and improve monitoring ⚙️
 
-go to gpedit.msc> administrative templtes > windows components and then Windows Powershell
-Turn on Module logging > Enabled > show > type "*" > ok
-Script block logging > Enabled 
-Turn on Powershell Transcription > Enabled * Include invocation Headers
-Event Viewer > Applciation > Windows Powershell 
+
+1. **Go to** `gpedit.msc`  
+   → **Administrative Templates**    → **Windows Components**    → **Windows PowerShell**  
+
+2. **Turn on Module Logging**  
+   ✅ **Enabled**  
+   → Click **Show**  
+   → Type `*`  
+   → **OK**  
+
+3. **Script Block Logging**  
+   ✅ **Enabled**  
+
+4. **Turn on PowerShell Transcription**  
+   ✅ **Enabled**  
+   → ✓ **Include Invocation Headers**  
 
 
 Alternatively, run a command: 
@@ -41,7 +52,7 @@ function Enable-PSLogging {
 Enable-PSLogging
 
 ```
-Open command prompt and run:
+Now open command prompt and run:
 ```
  gpupdate /force
 
