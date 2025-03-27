@@ -8,6 +8,9 @@ Script block logging > Enabled
 Turn on Powershell Transcription > Enabled * Include invocation Headers
 Event Viewer > Applciation > Windows Powershell 
 
+Open command prompt and run: gpupdate /force
+
+
 now go to C:\Program Files (x86)\ossec-agent/win32ui > view > view config 
 
 add: 
