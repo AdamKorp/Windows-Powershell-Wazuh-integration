@@ -1,4 +1,4 @@
-``<group name="windows-custom,">
+```<group name="windows-custom,">
   <rule id="100535" level="5">
     <if_sid>60009</if_sid>
     <field
@@ -31,4 +31,7 @@ name="win.system.providerName">^MicrosoftWindows-PowerShell$</field>
     <group>powershell,</group>
     <description>Powershell Critical
 EventLog</description>
-  </rule>``
+  </rule>
+</group>```
+
+
