@@ -11,12 +11,12 @@ Event Viewer > Applciation > Windows Powershell
 now go to C:\Program Files (x86)\ossec-agent/win32ui > view > view config 
 
 add: 
-``<agent_config>
+``
 <localfile>
 <location>Microsoft-Windows-PowerShell/Operational</location>
 <log_format>eventchannel</log_format>
 </localfile>
-</agent_config>``
+``
 
 And restart agent 
 
