@@ -12,6 +12,8 @@ Event Viewer > Applciation > Windows Powershell
 Alternatively, run a command: 
 
 
+```
+
 function Enable-PSLogging {
     # Define registry paths for ScriptBlockLogging and ModuleLogging
     $scriptBlockPath = 'HKLM:\Software\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging'
@@ -38,26 +40,26 @@ function Enable-PSLogging {
 
 Enable-PSLogging
 
+```
+Open command prompt and run:
+```
+ gpupdate /force
 
-
-
-
-Open command prompt and run: gpupdate /force
-
+```
 
 now go to C:\Program Files (x86)\ossec-agent/win32ui > view > view config 
 
 add: 
-``
+```
 <localfile>
 <location>Microsoft-Windows-PowerShell/Operational</location>
 <log_format>eventchannel</log_format>
 </localfile>
-``
+```
 
 And restart agent 
 
-Now the last step is to add rules in wazuh for powershell and restart manager. 
+Now the last step is to add rules in wazuh for powershell and restart manager. Tou can copied them from my repository or Wazuh official website. 
 
-Now, everything should be work
+Now, everything should be working as expected
 
