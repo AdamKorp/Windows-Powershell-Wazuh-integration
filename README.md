@@ -1,6 +1,6 @@
-Adding an agent to the Wazuh server is straightforward, and there's no better guide for it than the official Wazuh documentation.
+Adding an agent to the Wazuh server is straightforward, and there's no better guide for it than the official Wazuh documentation 📚.
 
-However, it's important to note that Windows PowerShell and Wazuh don’t get along. As a result, Wazuh may not notify us about suspicious PowerShell processes, which is a critical aspect of endpoint monitoring. Fortunately, with a few tweaks, we can help them find common ground and improve monitoring.
+However, it's important to note that Windows PowerShell and Wazuh don’t get along 🤝❌. As a result, Wazuh may not notify us about suspicious PowerShell processes, which is a critical aspect of endpoint monitoring 🔍💻. Fortunately, with a few tweaks, we can help them find common ground and improve monitoring ⚙️
 
 go to gpedit.msc> administrative templtes > windows components and then Windows Powershell
 Turn on Module logging > Enabled > show > type "*" > ok
