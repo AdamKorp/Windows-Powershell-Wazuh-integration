@@ -70,7 +70,7 @@ add:
 
 And restart agent 
 
-Now the last step is to add rules in wazuh for powershell and restart manager. Tou can copied them from my repository or Wazuh official website. 
+Now the last step is to add rules in wazuh for powershell and restart manager. You can copy them from my repository or Wazuh official website. 
 
 Now, everything should be working as expected
 
